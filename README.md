@@ -1,11 +1,11 @@
-## CodeITGitHubTest
+# CodeITGitHubTest
 Project with completed test task
 
 Made with non-reactive MVVM, used Alamofire + RxSwift for networking and SDWebImage for asyncronous web images download tasks.
 
-# Original task:
+## Original task:
 
-Create an one screen application. The application should display data (repository name, owner’s avatar, repository description) from GitHub search result (link will be hardcoded).
+Create an one screen application. The application should display data (repository name, owner’s avatar, repository description) from GitHub search result (link will be hardcoded).
 
 Technical requirements:
 - Swift
