@@ -10,12 +10,12 @@ import UIKit
 
 extension UIAlertController {
 
-    static func showErrorAlert(with message: String?, actionTitle: String?, completion: (()->())?, from viewController: UIViewController) {
-        showAlert(with: NSLocalizedString("Error", comment: "error name"), message: message, actionButtonTitle: actionTitle, cancelTitle: nil, actionHandler: completion, cancelHandler: nil, from: viewController)
+    static func showErrorAlert(with message: String?, actionTitle: String?, actionHandler: (()->())?, completion:(()->())? = nil, from viewController: UIViewController) {
+        showAlert(with: NSLocalizedString("Error", comment: "error name"), message: message, actionButtonTitle: actionTitle, cancelTitle: nil, actionHandler: actionHandler, cancelHandler: nil, completion: completion, from: viewController)
     }
     
-    static func showAlert(with title: String?, message: String?, cancelTitle: String?, cancelHandler: (()->())?, from viewController: UIViewController) {
-        showAlert(with: title, message: message, actionButtonTitle: nil, cancelTitle: cancelTitle, actionHandler: nil, cancelHandler: cancelHandler, from: viewController)
+    static func showAlert(with title: String?, message: String?, cancelTitle: String?, cancelHandler: (()->())?, completion:(()->())?, from viewController: UIViewController) {
+        showAlert(with: title, message: message, actionButtonTitle: nil, cancelTitle: cancelTitle, actionHandler: nil, cancelHandler: cancelHandler, completion: completion, from: viewController)
     }
     
     static func showAlert(with title: String?,
@@ -24,6 +24,7 @@ extension UIAlertController {
                           cancelTitle: String?,
                           actionHandler:(()->())?,
                           cancelHandler:(()->())?,
+                          completion:(()->())?,
                           from viewController: UIViewController) {
         let cancelString = cancelTitle ?? NSLocalizedString("Okay", comment: "okay string")
         let title = title ?? NSLocalizedString("Notification", comment: "alert name")
@@ -43,7 +44,7 @@ extension UIAlertController {
         }
         alert.addAction(cancelAction)
         
-        viewController.present(alert, animated: true, completion: nil)
+        viewController.present(alert, animated: true, completion: completion)
     }
 
 }

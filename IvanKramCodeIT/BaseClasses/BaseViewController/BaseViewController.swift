@@ -11,7 +11,7 @@ import Foundation
 
 protocol ShowAlertController {
 
-    func showFailureRequestAlert(with message: String?, completion: (()->())?)
+    func showFailureRequestAlert(with message: String?, actionHandler: (()->())?, completion: (()->())?)
     
 }
 
@@ -59,8 +59,8 @@ class BaseViewController: UIViewController, ShowActivityController {
 
 extension BaseViewController: ShowAlertController {
 
-    func showFailureRequestAlert(with message: String?, completion: (()->())?) {
-		UIAlertController.showErrorAlert(with: message, actionTitle: "Retry", completion: completion, from: self)
+    func showFailureRequestAlert(with message: String?, actionHandler: (()->())?, completion: (()->())?) {
+		UIAlertController.showErrorAlert(with: message, actionTitle: "Retry", actionHandler: actionHandler, completion: completion, from: self)
     }
     
 }

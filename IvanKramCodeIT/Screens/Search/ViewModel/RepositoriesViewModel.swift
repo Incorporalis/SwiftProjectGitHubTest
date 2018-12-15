@@ -69,10 +69,11 @@ class RepositoriesViewModel: IRepositoriesViewModel {
                 self?.delegate?.refreshUI()
                 self?.delegate?.hideHUD()
                 }, onError: { [weak self] in
-                    self?.delegate?.showFailureRequestAlert(with: $0.localizedDescription, completion: { [weak self] in
+                    self?.delegate?.showFailureRequestAlert(with: $0.localizedDescription, actionHandler:{ [weak self] in
                         self?.loadRequest()
+                        }, completion: { [weak self] in
+                            self?.delegate?.hideHUD()
                     })
-                    self?.delegate?.hideHUD()
             })
             .disposed(by: bag)
     }
