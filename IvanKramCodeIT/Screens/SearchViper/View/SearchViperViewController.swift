@@ -10,13 +10,14 @@ import UIKit
 
 protocol ISearchViperViewInput: class, ShowActivityController, ShowAlertController {
 
+    func config(with output: ISearchViperViewOutput)
     func refreshUI()
 
 }
 
 protocol ISearchViperViewOutput: class {
 
-    var elements: [IRepositoryCellViewModel]! { get }
+    var elements: [IRepositoryCellViewModel] { get }
 
 	func refreshData()
     func viewIsReady()

@@ -11,6 +11,7 @@ import RxSwift
 
 protocol ISearchViperInteractorInput: class {
 
+    func configure(with output: ISearchViperInteractorOutput)
 	func startDataLoading()
 
 }
@@ -30,6 +31,10 @@ class SearchViperInteractor: ISearchViperInteractorInput {
 
     init(with search: ISearchService) {
         self.searchService = search
+    }
+
+    func configure(with output: ISearchViperInteractorOutput) {
+        self.output = output
     }
 
 	func startDataLoading() {

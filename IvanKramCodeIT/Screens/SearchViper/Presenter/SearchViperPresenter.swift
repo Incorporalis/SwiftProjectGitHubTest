@@ -15,16 +15,19 @@ class SearchViperPresenter: ISearchViperModuleInput, ISearchViperViewOutput, ISe
     weak var view: ISearchViperViewInput?
     let interactor: ISearchViperInteractorInput
     let router: ISearchViperRouterInput
-    var elements: [IRepositoryCellViewModel]!
+    var elements = [IRepositoryCellViewModel]()
 
 
     init(with interactor: ISearchViperInteractorInput, router: ISearchViperRouterInput) {
         self.interactor = interactor
         self.router = router
+
+        interactor.configure(with: self)
     }
 
     func configure(with view: ISearchViperViewInput) {
         self.view = view
+        view.config(with: self)
     }
 
     func viewIsReady() {
