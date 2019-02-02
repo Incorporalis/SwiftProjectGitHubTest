@@ -31,7 +31,7 @@ class BaseViewController: UIViewController, ShowActivityController {
         
         let view = UIView(frame: self.view.bounds)
         view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
         activityIndicator.color = .lightGray
         activityIndicator.center = view.center
         activityIndicator.isHidden = false
