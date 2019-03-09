@@ -23,24 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func decode(_ num: String) -> String {
-        let alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
-
-        let len = Int(String(num.first!))
-
-        let inverted = Array(num.dropFirst().compactMap {String($0)}.reversed()).joined(separator: "")
-
-        let regex = try! NSRegularExpression(pattern: ".{1,2}")
-        let regres = regex.matches(in: inverted, range: NSRange(inverted.startIndex..., in: inverted))
-        let arr = regres.map { String(inverted[Range($0.range, in: inverted)!]) }
-
-        let cleared = arr.map { $0.first == "0" ? String($0.last!) : $0 }
-
-        let res = cleared.map { String(alphabet[alphabet.index(alphabet.startIndex, offsetBy: Int($0)! - len!)]) }.joined(separator: "")
-
-        return res.prefix(1).uppercased() + res.dropFirst()
-    }
-
     func loadDependencies() -> RouterDependencies {
         let env                = Environment(.PROD)
         let errorHandler       = NetworkErrorHandler()
