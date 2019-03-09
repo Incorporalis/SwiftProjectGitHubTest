@@ -7,8 +7,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
-  - RxSwift (~> 4.0)
-  - SDWebImage
+  - RxSwift
+  - SDWebImage (~> 4.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -21,6 +21,6 @@ SPEC CHECKSUMS:
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: ede338f61fb625f5ec97a672989afdd1ab6ec6ee
+PODFILE CHECKSUM: 9fad6a6fd7a8573cd6d0fb243237d53a66c2b945
 
 COCOAPODS: 1.5.3

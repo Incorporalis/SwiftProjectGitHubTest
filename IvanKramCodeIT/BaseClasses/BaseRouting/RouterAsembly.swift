@@ -33,9 +33,17 @@ class RouterAssembly: NSObject, IRouterAssembly {
         navigation.setViewControllers([vc], animated: false)
     }
 
+    func assembleMainScreenViper(on navigation: UINavigationController, with dependencies: RouterDependencies) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SearchViperViewController") as! SearchViperViewController
+        let module = SearchViperAssembly()
+        module.createModule(with: vc, dependencies: dependencies)
+        navigation.setViewControllers([vc], animated: false)
+    }
+
     func assembleMainScreenAsRoot(with dependencies: RouterDependencies) {
         let rootNavController = UIApplication.shared.windows.first?.rootViewController as! UINavigationController
-        assembleMainScreen(on: rootNavController, with: dependencies)
+        assembleMainScreenViper(on: rootNavController, with: dependencies)
     }
     
 }
