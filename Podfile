@@ -5,8 +5,8 @@ use_frameworks!
 
 target 'IvanKramCodeIT' do
 
-  pod 'Alamofire',  '~> 4.7'
+  pod 'Alamofire'
   pod 'RxSwift'
-  pod 'SDWebImage', '~> 4.4'
+  pod 'SDWebImage'
 
 end

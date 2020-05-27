@@ -14,12 +14,12 @@ protocol IRequestOperation {
     associatedtype ResponseModel: IServerResponseModel
     
     var request: IRequest { get }
-    func execute(in dispatcher: INetworkDispatcher, with completion: @escaping (Result<ResponseModel.Output>)->Void) throws
+    func execute(in dispatcher: INetworkDispatcher, with completion: @escaping (Result<ResponseModel.Output, Error>)->Void) throws
 }
 
 extension IRequestOperation {
  
-    func execute(in dispatcher: INetworkDispatcher, with completion: @escaping (Result<ResponseModel.Output>)->Void) throws {
+    func execute(in dispatcher: INetworkDispatcher, with completion: @escaping (Result<ResponseModel.Output, Error>)->Void) throws {
         try dispatcher.execute(request: self.request) { (response) in
             let checkedResult = dispatcher.errorHandler.handle(result: response.result, with: response.response?.statusCode)
             

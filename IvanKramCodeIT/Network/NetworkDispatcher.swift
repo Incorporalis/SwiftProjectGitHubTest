@@ -13,7 +13,7 @@ import RxSwift
 protocol INetworkDispatcher{
     
     var errorHandler: INetworkErrorHandler { get }
-    func execute(request: IRequest, completion: @escaping (DataResponse<Any>)->()) throws
+    func execute(request: IRequest, completion: @escaping (DataResponse<Any, AFError>)->()) throws
     
 }
 
@@ -27,12 +27,12 @@ class NetworkDispatcher: INetworkDispatcher {
         self.errorHandler = errorHandler
     }
     
-    public func execute(request: IRequest, completion: @escaping (DataResponse<Any>)->()) throws {
+    public func execute(request: IRequest, completion: @escaping (DataResponse<Any, AFError>)->()) throws {
         let rq = try self.prepareURLRequest(for: request)
         runInBackground({
             let taskId = $0
             print("sending request with url: \(rq.url?.absoluteString ?? "(none)")")
-            Alamofire.request(rq).responseJSON(completionHandler: {
+            AF.request(rq).responseJSON(completionHandler: {
                 print("got response from request: \(rq.url?.absoluteString ?? "(none)")\nresponse:\n\n\($0 as AnyObject)")
                 completion($0)
                 UIApplication.shared.endBackgroundTask(taskId)

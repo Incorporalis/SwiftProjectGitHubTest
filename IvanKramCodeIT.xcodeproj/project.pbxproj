@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,31 +28,13 @@
 		EA3C22532148420D006519DE /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C22522148420D006519DE /* RepositoryTableViewCell.swift */; };
 		EA3C22552148422C006519DE /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */; };
 		EA3C22602148558F006519DE /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C225F2148558F006519DE /* RepositoriesViewModel.swift */; };
-		EA7B5F9021E9F6A5008A2809 /* SearchViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F8F21E9F6A5008A2809 /* SearchViperPresenter.swift */; };
-		EA7B5F9221E9F6FE008A2809 /* SearchViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F9121E9F6FE008A2809 /* SearchViperInteractor.swift */; };
-		EA7B5F9421E9F77C008A2809 /* SearchViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F9321E9F77C008A2809 /* SearchViperViewController.swift */; };
-		EA7B5F9621E9F7F9008A2809 /* SearchViperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F9521E9F7F9008A2809 /* SearchViperAssembly.swift */; };
-		EA7B5F9821E9F81B008A2809 /* SearchViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F9721E9F81B008A2809 /* SearchViperRouter.swift */; };
-		EA9EB0EA2233C9B8002AE18C /* ReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0E92233C9B8002AE18C /* ReduxViewController.swift */; };
-		EA9EB0F52233D66E002AE18C /* ReduxVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0F42233D66E002AE18C /* ReduxVCPresenter.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EA2B0EDE2233C52F0087295A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA3C21EF21470F31006519DE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA3C21F621470F31006519DE;
-			remoteInfo = IvanKramCodeIT;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2A0C5BAD14011A67E2422480 /* Pods-IvanKramCodeIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IvanKramCodeIT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IvanKramCodeIT/Pods-IvanKramCodeIT.debug.xcconfig"; sourceTree = "<group>"; };
 		33C5C4D98F62B25C2F4A79AF /* Pods_IvanKramCodeIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IvanKramCodeIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07EB64E87EB8B5B796FDCF0 /* Pods-IvanKramCodeIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IvanKramCodeIT.release.xcconfig"; path = "Pods/Target Support Files/Pods-IvanKramCodeIT/Pods-IvanKramCodeIT.release.xcconfig"; sourceTree = "<group>"; };
-		EA2B0ED92233C52F0087295A /* PeerlabPDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerlabPDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA3C21F721470F31006519DE /* PeerlabPD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeerlabPD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3C21F721470F31006519DE /* IvanKramCodeIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IvanKramCodeIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3C21FA21470F31006519DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3C21FC21470F31006519DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA3C21FF21470F31006519DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,23 +56,9 @@
 		EA3C22522148420D006519DE /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
 		EA3C225F2148558F006519DE /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
-		EA7B5F8F21E9F6A5008A2809 /* SearchViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperPresenter.swift; sourceTree = "<group>"; };
-		EA7B5F9121E9F6FE008A2809 /* SearchViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperInteractor.swift; sourceTree = "<group>"; };
-		EA7B5F9321E9F77C008A2809 /* SearchViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperViewController.swift; sourceTree = "<group>"; };
-		EA7B5F9521E9F7F9008A2809 /* SearchViperAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperAssembly.swift; sourceTree = "<group>"; };
-		EA7B5F9721E9F81B008A2809 /* SearchViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperRouter.swift; sourceTree = "<group>"; };
-		EA9EB0E92233C9B8002AE18C /* ReduxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxViewController.swift; sourceTree = "<group>"; };
-		EA9EB0F42233D66E002AE18C /* ReduxVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxVCPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EA2B0ED62233C52F0087295A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA3C21F421470F31006519DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,7 +73,7 @@
 		EA3C21EE21470F31006519DE = {
 			isa = PBXGroup;
 			children = (
-				EA3C21F921470F31006519DE /* PeerlabPD */,
+				EA3C21F921470F31006519DE /* IvanKramCodeIT */,
 				EA3C21F821470F31006519DE /* Products */,
 				F5E3D4849E6D14EB6378A737 /* Pods */,
 				F284A168E4E08ECC3A5E53C6 /* Frameworks */,
@@ -115,13 +83,12 @@
 		EA3C21F821470F31006519DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA3C21F721470F31006519DE /* PeerlabPD.app */,
-				EA2B0ED92233C52F0087295A /* PeerlabPDTests.xctest */,
+				EA3C21F721470F31006519DE /* IvanKramCodeIT.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA3C21F921470F31006519DE /* PeerlabPD */ = {
+		EA3C21F921470F31006519DE /* IvanKramCodeIT */ = {
 			isa = PBXGroup;
 			children = (
 				EA3C221E21471605006519DE /* AppFiles */,
@@ -132,7 +99,6 @@
 				EA3C221B214715D2006519DE /* Screens */,
 				EA3C222F21471F7E006519DE /* Services */,
 			);
-			name = PeerlabPD;
 			path = IvanKramCodeIT;
 			sourceTree = "<group>";
 		};
@@ -148,8 +114,6 @@
 		EA3C221B214715D2006519DE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				EA9EB0E82233C98D002AE18C /* ReduxModule */,
-				EA7B5F8921E9F608008A2809 /* SearchViper */,
 				EA3C224E21484180006519DE /* Search */,
 			);
 			path = Screens;
@@ -312,67 +276,6 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		EA7B5F8921E9F608008A2809 /* SearchViper */ = {
-			isa = PBXGroup;
-			children = (
-				EA7B5F8E21E9F683008A2809 /* Router */,
-				EA7B5F8D21E9F67D008A2809 /* Assembly */,
-				EA7B5F8C21E9F678008A2809 /* View */,
-				EA7B5F8B21E9F66F008A2809 /* Interactor */,
-				EA7B5F8A21E9F666008A2809 /* Presenter */,
-			);
-			path = SearchViper;
-			sourceTree = "<group>";
-		};
-		EA7B5F8A21E9F666008A2809 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				EA7B5F8F21E9F6A5008A2809 /* SearchViperPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		EA7B5F8B21E9F66F008A2809 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				EA7B5F9121E9F6FE008A2809 /* SearchViperInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		EA7B5F8C21E9F678008A2809 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EA7B5F9321E9F77C008A2809 /* SearchViperViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		EA7B5F8D21E9F67D008A2809 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				EA7B5F9521E9F7F9008A2809 /* SearchViperAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		EA7B5F8E21E9F683008A2809 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				EA7B5F9721E9F81B008A2809 /* SearchViperRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		EA9EB0E82233C98D002AE18C /* ReduxModule */ = {
-			isa = PBXGroup;
-			children = (
-				EA9EB0E92233C9B8002AE18C /* ReduxViewController.swift */,
-				EA9EB0F42233D66E002AE18C /* ReduxVCPresenter.swift */,
-			);
-			path = ReduxModule;
-			sourceTree = "<group>";
-		};
 		F284A168E4E08ECC3A5E53C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,27 +296,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA2B0ED82233C52F0087295A /* PeerlabPDTests */ = {
+		EA3C21F621470F31006519DE /* IvanKramCodeIT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA2B0EE02233C52F0087295A /* Build configuration list for PBXNativeTarget "PeerlabPDTests" */;
-			buildPhases = (
-				EA2B0ED52233C52F0087295A /* Sources */,
-				EA2B0ED62233C52F0087295A /* Frameworks */,
-				EA2B0ED72233C52F0087295A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA2B0EDF2233C52F0087295A /* PBXTargetDependency */,
-			);
-			name = PeerlabPDTests;
-			productName = IvanKramCodeITTests;
-			productReference = EA2B0ED92233C52F0087295A /* PeerlabPDTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EA3C21F621470F31006519DE /* PeerlabPD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA3C221421470F33006519DE /* Build configuration list for PBXNativeTarget "PeerlabPD" */;
+			buildConfigurationList = EA3C221421470F33006519DE /* Build configuration list for PBXNativeTarget "IvanKramCodeIT" */;
 			buildPhases = (
 				546E3BC94BCCAFE9C4E5849D /* [CP] Check Pods Manifest.lock */,
 				EA3C21F321470F31006519DE /* Sources */,
@@ -425,9 +310,9 @@
 			);
 			dependencies = (
 			);
-			name = PeerlabPD;
+			name = IvanKramCodeIT;
 			productName = IvanKramCodeIT;
-			productReference = EA3C21F721470F31006519DE /* PeerlabPD.app */;
+			productReference = EA3C21F721470F31006519DE /* IvanKramCodeIT.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -436,16 +321,13 @@
 		EA3C21EF21470F31006519DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = IvanKram;
 				TargetAttributes = {
-					EA2B0ED82233C52F0087295A = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = EA3C21F621470F31006519DE;
-					};
 					EA3C21F621470F31006519DE = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -462,20 +344,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA3C21F621470F31006519DE /* PeerlabPD */,
-				EA2B0ED82233C52F0087295A /* PeerlabPDTests */,
+				EA3C21F621470F31006519DE /* IvanKramCodeIT */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EA2B0ED72233C52F0087295A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA3C21F521470F31006519DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,7 +374,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PeerlabPD-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-IvanKramCodeIT-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -512,33 +386,21 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PeerlabPD/Pods-PeerlabPD-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IvanKramCodeIT/Pods-IvanKramCodeIT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IvanKramCodeIT/Pods-IvanKramCodeIT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeerlabPD/Pods-PeerlabPD-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IvanKramCodeIT/Pods-IvanKramCodeIT-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EA2B0ED52233C52F0087295A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA3C21F321470F31006519DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,39 +408,24 @@
 				EA3C223421471FD8006519DE /* SearchService.swift in Sources */,
 				EA3C22602148558F006519DE /* RepositoriesViewModel.swift in Sources */,
 				EA3C224421472253006519DE /* BaseViewController.swift in Sources */,
-				EA9EB0F52233D66E002AE18C /* ReduxVCPresenter.swift in Sources */,
 				EA3C222321471774006519DE /* User.swift in Sources */,
 				EA3C22552148422C006519DE /* RepositoryCellViewModel.swift in Sources */,
-				EA7B5F9621E9F7F9008A2809 /* SearchViperAssembly.swift in Sources */,
 				EA3C21FD21470F31006519DE /* ViewController.swift in Sources */,
-				EA9EB0EA2233C9B8002AE18C /* ReduxViewController.swift in Sources */,
 				EA3C224521472253006519DE /* BaseRequestOperation.swift in Sources */,
 				EA3C21FB21470F31006519DE /* AppDelegate.swift in Sources */,
 				EA3C224D21472B1A006519DE /* UIAlerController.swift in Sources */,
-				EA7B5F9421E9F77C008A2809 /* SearchViperViewController.swift in Sources */,
 				EA3C222E21471D1B006519DE /* NetworkDispatcher.swift in Sources */,
 				EA3C222721471A4F006519DE /* ErrorHandler.swift in Sources */,
-				EA7B5F9821E9F81B008A2809 /* SearchViperRouter.swift in Sources */,
-				EA7B5F9021E9F6A5008A2809 /* SearchViperPresenter.swift in Sources */,
 				EA3C222C21471D10006519DE /* Request.swift in Sources */,
 				EA3C22212147162D006519DE /* Repository.swift in Sources */,
 				EA3C2225214719F9006519DE /* Environment.swift in Sources */,
 				EA3C224721472253006519DE /* RouterAsembly.swift in Sources */,
 				EA3C22532148420D006519DE /* RepositoryTableViewCell.swift in Sources */,
-				EA7B5F9221E9F6FE008A2809 /* SearchViperInteractor.swift in Sources */,
 				EA3C223621471FE8006519DE /* SwiftRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EA2B0EDF2233C52F0087295A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA3C21F621470F31006519DE /* PeerlabPD */;
-			targetProxy = EA2B0EDE2233C52F0087295A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EA3C21FE21470F31006519DE /* Main.storyboard */ = {
@@ -600,51 +447,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EA2B0EE12233C52F0087295A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 363TUX9KUK;
-				INFOPLIST_FILE = PeerlabPDTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeerlabPD.app/PeerlabPD";
-			};
-			name = Debug;
-		};
-		EA2B0EE22233C52F0087295A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 363TUX9KUK;
-				INFOPLIST_FILE = PeerlabPDTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeerlabPD.app/PeerlabPD";
-			};
-			name = Release;
-		};
 		EA3C221221470F33006519DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -761,38 +563,40 @@
 		};
 		EA3C221521470F33006519DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0C5BAD14011A67E2422480 /* Pods-IvanKramCodeIT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 363TUX9KUK;
-				INFOPLIST_FILE = "$(SRCROOT)/PeerlabPD/AppFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/IvanKramCodeIT/AppFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.IvanKramCodeIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		EA3C221621470F33006519DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07EB64E87EB8B5B796FDCF0 /* Pods-IvanKramCodeIT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 363TUX9KUK;
-				INFOPLIST_FILE = "$(SRCROOT)/PeerlabPD/AppFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/IvanKramCodeIT/AppFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.IvanKramCodeIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -800,15 +604,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA2B0EE02233C52F0087295A /* Build configuration list for PBXNativeTarget "PeerlabPDTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA2B0EE12233C52F0087295A /* Debug */,
-				EA2B0EE22233C52F0087295A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EA3C21F221470F31006519DE /* Build configuration list for PBXProject "IvanKramCodeIT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -818,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA3C221421470F33006519DE /* Build configuration list for PBXNativeTarget "PeerlabPD" */ = {
+		EA3C221421470F33006519DE /* Build configuration list for PBXNativeTarget "IvanKramCodeIT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA3C221521470F33006519DE /* Debug */,

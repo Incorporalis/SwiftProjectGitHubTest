@@ -60,7 +60,7 @@ extension DomainErrors: LocalizedError {
 
 public protocol INetworkErrorHandler {
     
-    func handle(result: Result<Any>, with statusCode: Int?) -> Result<Any>
+    func handle(result: AFResult<Any>, with statusCode: Int?) -> Result<Any, Error>
     func handle(error: Error, with completion:((NSError)->())?)
     
 }
@@ -80,7 +80,7 @@ class NetworkErrorHandler : INetworkErrorHandler {
         return DomainErrors.unknownError(description: "An unknown error has occurred. Please try again.")
     }
     
-    func handle(result: Result<Any>, with statusCode: Int?) -> Result<Any> {
+    func handle(result: AFResult<Any>, with statusCode: Int?) -> Result<Any, Error> {
         switch result {
         case .success(let data):
             guard let jsonData = try? JSONSerialization.data(withJSONObject: data, options: .prettyPrinted) else {
@@ -92,26 +92,24 @@ class NetworkErrorHandler : INetworkErrorHandler {
             }
             
             guard let status = error.status else{
-                return result
+                return Result.success(data)
             }
             
             
             switch status {
             case .success:
-                return result
+                return Result.success(data)
             case .error:
                 return Result.failure(NetworkErrors.unknownError(description: error.message ?? "No error message", code: statusCode ?? -1))
             }
         case .failure(let error):
-            if let afError = error as? AFError {
-                switch (afError) {
-                case .responseSerializationFailed:
-                    return Result.failure(unknownError())
-                default:
-                    break;
-                }
+            switch (error) {
+            case .responseSerializationFailed:
+                return Result.failure(unknownError())
+            default:
+                break;
             }
-            return result
+            return Result.failure(error)
         }
     }
     
